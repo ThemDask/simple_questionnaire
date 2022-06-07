@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Corfu</title>
+  <link type="text/css" rel="stylesheet" href="/src/css/styles.css" >
+</head>
+
+<body>
+    <div class="titlecont">
+        <h1 id="lbl">Ποιος χαρακτήρας της Κέρκυρας είσαι ?</h1>
+        <h2 id="sublb">Μάντεψε!&nbsp&nbsp&nbspΠαίξε!&nbsp&nbsp&nbspΓέλασε!</h2>
+    </div>
+
+    <div id="result" style="display: none;">
+        <h2 id="who"></h2>
+    </div>
+
+    <div class="maincont" id="maincont">
+        <h3 class="start">Απάντησε στις ακόλουθες ερωτήσεις:</h3>
+        <div class="cont">
+            <h4 class="q1">Αγαπημένο Σούπερ Μάρκετ:<br></h4>
+            <input type="radio" id="q1r" name="fav_market" value="ΣΥΝΚΑ">
+            <label>ΣΥΝΚΑ</label><br>
+            <input type="radio" id="q1r" name="fav_market" value="ΙΟΝΙΟΝ">
+            <label>ΙΟΝΙΟΝ</label><br>
+            <input type="radio" id="q1r" name="fav_market" value="LIDL">
+            <label>ΛΙΝΤΛ</label><br>
+            <img id="dimitra_img" src="/src/assets/dimitra.jpg" alt="dimitra">
+        </div>
+        <br>
+        <div class="cont">
+            <h4 class="q2">Αγαπημένο ποτό/αναψυκτικό:<br></h4>
+            <input type="radio" id="q2r" name="fav_drink" value="ΦΑΝΤΑ">
+            <label>ΦΑΝΤΑ</label><br>
+            <input type="radio" id="q2r" name="fav_drink" value="ΝΕΡΟ">
+            <label>ΝΕΡΟ</label><br>
+            <input type="radio" id="q2r" name="fav_drink" value="ΣΟΔΑ">
+            <label>ΣΟΔΑ/ΓΚΑΖΟΖΑ</label><br>
+            <input type="radio" id="q2r" name="fav_drink" value="ΚΟΚΑΚΟΛΑ">
+            <label>ΚΟΚΑΚΟΛΑ</label><br>
+            <input type="radio" id="q2r" name="fav_drink" value="ΝΤΟΜ">
+            <label>ΝΤΟΜ ΠΕΡΙΝΙΟΝ</label>
+            <img id="drink_img" src="/src/assets/drink.jpg" alt="drink">
+        </div>
+        <br>
+        <div class="cont">
+            <h4 class="q1">Αγαπημένο Videogame ?<br></h4>
+            <input type="radio" id="q3r" name="fav_game" value="Apex">
+            <label>Apex</label><br>
+            <input type="radio" id="q3r" name="fav_game" value="Supreme">
+            <label>Supreme</label><br>
+            <input type="radio" id="q3r" name="fav_game" value="FIFA">
+            <label>FIFA</label><br>
+            <input type="radio" id="q3r" name="fav_game" value="δεν">
+            <label>δεν παίζω παιχνίδια</label>
+
+        </div>
+        <br>
+        <div class="cont">
+            <h4 class="q4">Χωριανόπουλος ή Καρύδης ?<br></h4>
+            <input type="radio" id="q4r" name="professor" value="Χωριανοπουλος">
+            <label>Χωριανόπουλος</label><br>
+            <input type="radio" id="q4r" name="professor" value="Καρυδης">
+            <label>Καρύδης</label>
+            <img id="professor_img" src="/src/assets/professor.jpg" alt="professor">
+        </div>
+        <br>
+        <div class="cont">
+            <h4 class="q5">Παρασκευή Βράδυ. Τι κάνεις ?<br></h4>
+            <input type="radio" id="q5r" name="activity" value="Azur">
+            <label>παω Azur</label><br>
+            <input type="radio" id="q5r" name="activity" value="σπιαναδα">
+            <label>παω παλατάκι/σπιαναδα</label><br>
+            <input type="radio" id="q5r" name="activity" value="gaming">
+            <label>κανω gaming</label><br>
+            <input type="radio" id="q5r" name="activity" value="σκουπιδια">
+            <label>μαζευω σκουπιδια στις παραλιες</label>
+            <img id="activity_img" src="/src/assets/activity.png" alt="activity">
+        </div>
+        <br>
+        <div class="cont">
+            <h4 class="q6">Πεινας και εισαι στην Παλια Πολη. Τι τρως ?<br></h4>
+            <input type="radio" id="q6r" name="food" value="λεσχη">
+            <label>λεσχη</label><br>
+            <input type="radio" id="q6r" name="food" value="Αρτεμης">
+            <label>Αρτεμης</label><br>
+            <input type="radio" id="q6r" name="food" value="πανινι">
+            <label>πανινι</label><br>
+            <input type="radio" id="q6r" name="food" value="mama">
+            <label>mama souvlaki</label>
+            <img id="food_img" src="/src/assets/food.jpg" alt="food">
+        </div>
+
+    </div>
+    <div id="buttoncont">
+        <button id="btn1" type="button" onclick="btn_1()">Ποιος ειμαι ?</button>
+    </div>
+
+</body>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js">  </script>
+<script type="text/javascript" src="src/js/script.js"></script>
+</html>
