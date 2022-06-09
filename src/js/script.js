@@ -1,13 +1,5 @@
 var inputs = []
 
-var xaris = 0;
-var mikros = 0;
-var seros = 0;
-var themos = 0;
-var geros = 0;
-var petros = 0;
-var black = 0;
-
 function btn_1() {
     var q1 = document.getElementsByName('fav_market');
     var q2 = document.getElementsByName('fav_drink');
@@ -18,7 +10,7 @@ function btn_1() {
 
     save_inputs(q1, q2, q3, q4, q5, q6);
 
-    console.log(inputs);
+    //console.log(inputs);
     result();
 
     document.getElementById("maincont").style.display = "none";
@@ -34,50 +26,152 @@ function save_inputs(q_one, q_two, q_three,q_four,q_five,q_six){
         q= table[k]
         for(i = 0; i < q.length; i++) {
             if(q[i].checked) {
-                console.log(q[i].value);
+                //console.log(q[i].value);
                 inputs.push(q[i].value) ;
             }
-    
         }
     }
 
 }
 
 function result() {
-    var xaris = 0;
-    var mikros = 0;
-    var seros = 0;
-    var themos = 0;
-    var geros = 0;
-    var petros = 0;
-    var black = 0;
+    let chars = {
+        xaris: 0,
+        mikros: 0,
+        seros: 0,
+        themos: 0,
+        geros: 0,
+        petros: 0,
+        black: 0,
+        frem: 0,
+        maxi: 0 };
 
-    var winner;
-
-        if (inputs[0] = "ΙΟΝΙΟΝ") {
-            themos +=1;
-        }
-        if (inputs[1] = "ΦΑΝΤΑ") {
-            themos +=1;
-        }
-        if (inputs[2] = "Supreme") {
-            themos +=1;
-        }
-        if (inputs[3] = "Χωριανοπουλος") {
-            xaris +=1;
-        }
-        if (inputs[4] = "σπιαναδα") {
-            xaris +=1;
-        }
-        if (inputs[5] = "mama") {
-            xaris +=1;
+        //q1
+        if (inputs[0] == "ΙΟΝΙΟΝ") {
+            chars.themos +=1;
+            chars.petros +=1;
+            chars.frem +=1;
+        } else if (inputs[0] == "ΣΥΝΚΑ"){
+            chars.seros +=1;
+            chars.geros +=1;
+        } else if (inputs[0] == "LIDL"){
+            chars.black +=1;
+            chars.mikros +=1;
+            chars.xaris +=1;
         }
 
-    if (themos>xaris) {
-        winner = "Εισαι ο... Θεμος"
-    } else {
-        winner = "Εισαι ο... Χαρης"
-    }
+        //q2
+        if (inputs[1] == "ΦΑΝΤΑ") {
+            chars.themos +=1;
+            chars.mikros +=1
+            chars.xaris +=1
+        } else if (inputs[1] == "ΝΕΡΟ") {
+            chars.seros +=1;
+        }
+        else if (inputs[1] == "ΣΟΔΑ") {
+            chars.frem +=1;
+        }
+        else if (inputs[1] == "ΚΟΚΑΚΟΛΑ") {
+            chars.black +=1;
+        }
+        else if (inputs[1] == "ΝΤΟΜ") {
+            chars.geros +=1;
+            chars.petros +=1;
+        }
 
-    document.getElementById("who").innerHTML = winner;
+        //q3
+        if (inputs[2] == "Supreme") {
+            chars.themos +=1;
+            chars.frem +=1;
+        } else if (inputs[2] == "Apex") {
+            chars.seros +=1;
+            chars.black +=1;
+            chars.petros +=1;
+        } else if (inputs[2] == "Kart") {
+            chars.mikros +=1;
+            chars.xaris +=1;
+            chars.geros +=1;
+            chars.mikros +=1;
+        }
+        //q4
+        if (inputs[3] == "Χωριανοπουλος") {
+            chars.xaris +=1;
+            chars.themos +=1;
+            chars.geros +=1;
+            chars.black +=1;
+            chars.frem +=1;
+            chars.petros +=1;
+        }
+        else if (inputs[3] == "Καρυδης") {
+            chars.mikros +=1;
+            chars.seros +=1;
+            
+        }
+
+        //q5
+        if (inputs[4] == "σπιαναδα") {
+            chars.frem +=1;
+            chars.mikros +=1;
+        } else if (inputs[4] == "Azur") {
+            chars.petros +=1;
+            chars.xaris +=1;
+        } else if (inputs[4] == "gaming") {
+            chars.seros +=1;
+            chars.themos +=1;
+            chars.black +=1;
+        } else if (inputs[4] == "σκουπιδια") {
+            chars.geros +=1;
+        }
+
+        //q6
+        if (inputs[5] == "mama") {
+            chars.xaris +=1;
+            chars.petros +=1;
+        } else if (inputs[5] == "λεσχη") {
+            chars.geros +=1;
+            chars.black +=1;
+        } else if (inputs[5] == "Αρτεμης") {
+            chars.frem +=1;
+            chars.seros +=1;
+        } else if (inputs[5] == "πανινι") {
+            chars.themos +=1;
+            chars.mikros +=1;
+        }
+
+        //q7
+        if (inputs[6] == "Μιτσικελι") {
+            chars.frem +=1;
+            chars.seros +=1;
+        } else if (inputs[6] == "Κωστηλατας") {
+            chars.petros +=1;
+            chars.black +=1;
+        } else if (inputs[6] == "table") {
+            chars.mikros +=1;
+            chars.xaris +=1;
+        } else if (inputs[6] == "πινω") {
+            chars.themos +=1;
+            chars.geros +=1;
+            
+        }
+
+        //q8
+        if (inputs[5] == "αλκοολ") {
+            chars.frem +=1;
+            chars.petros +=1;
+        } else if (inputs[5] == "ψωμι") {
+            chars.geros +=1;
+            chars.black +=1;
+        } else if (inputs[5] == "χαρτονι") {
+            chars.themos +=1;
+            chars.xaris +=1;
+        } else if (inputs[5] == "πατατακια") {
+            chars.seros +=1;
+            chars.mikros +=1;
+        }
+
+    // find max in chars obj
+    var maxKey = _.max(Object.keys(chars), function (o) { return chars[o]; });
+
+    // print result in screen
+    document.getElementById("who").innerHTML = "Εισαι ο..." + maxKey;
 }

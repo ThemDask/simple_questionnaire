@@ -37,12 +37,20 @@ body {
     top: 415px;
 }
 
+#gaming_img {
+    width: 10%;
+    height: 10%;
+    position: absolute;
+    left: 900px;
+    top: 575px;
+}
+
 #professor_img {
     width: 10%;
     height: 10%;
     position: absolute;
     left: 900px;
-    top: 725px;
+    top: 700px;
 }
 
 #activity_img {
@@ -59,6 +67,14 @@ body {
     position: absolute;
     left: 900px;
     top: 1015px;
+}
+
+#water_img {
+    width: 10%;
+    height: 10%;
+    position: absolute;
+    left: 900px;
+    top: 1200px;
 }
 
 #btn1 {

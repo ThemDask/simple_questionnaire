@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Corfu</title>
-  <link type="text/css" rel="stylesheet" href="/src/css/styles.css" >
+  <link type="text/css" rel="stylesheet" href="src/css/styles.css" >
 </head>
 
 <body>
@@ -28,7 +28,7 @@
             <label>ΙΟΝΙΟΝ</label><br>
             <input type="radio" id="q1r" name="fav_market" value="LIDL">
             <label>ΛΙΝΤΛ</label><br>
-            <img id="dimitra_img" src="/src/assets/dimitra.jpg" alt="dimitra">
+            <img id="dimitra_img" src="src/assets/dimitra.jpg" alt="dimitra">
         </div>
         <br>
         <div class="cont">
@@ -43,7 +43,7 @@
             <label>ΚΟΚΑΚΟΛΑ</label><br>
             <input type="radio" id="q2r" name="fav_drink" value="ΝΤΟΜ">
             <label>ΝΤΟΜ ΠΕΡΙΝΙΟΝ</label>
-            <img id="drink_img" src="/src/assets/drink.jpg" alt="drink">
+            <img id="drink_img" src="src/assets/drink.jpg" alt="drink">
         </div>
         <br>
         <div class="cont">
@@ -52,10 +52,9 @@
             <label>Apex</label><br>
             <input type="radio" id="q3r" name="fav_game" value="Supreme">
             <label>Supreme</label><br>
-            <input type="radio" id="q3r" name="fav_game" value="FIFA">
-            <label>FIFA</label><br>
-            <input type="radio" id="q3r" name="fav_game" value="δεν">
-            <label>δεν παίζω παιχνίδια</label>
+            <input type="radio" id="q3r" name="fav_game" value="Kart">
+            <label>Mario Kart</label><br>
+            <img id="gaming_img" src="src/assets/gaming.jpg" alt="gaming">
 
         </div>
         <br>
@@ -65,7 +64,7 @@
             <label>Χωριανόπουλος</label><br>
             <input type="radio" id="q4r" name="professor" value="Καρυδης">
             <label>Καρύδης</label>
-            <img id="professor_img" src="/src/assets/professor.jpg" alt="professor">
+            <img id="professor_img" src="src/assets/professor.jpg" alt="professor">
         </div>
         <br>
         <div class="cont">
@@ -78,7 +77,7 @@
             <label>κανω gaming</label><br>
             <input type="radio" id="q5r" name="activity" value="σκουπιδια">
             <label>μαζευω σκουπιδια στις παραλιες</label>
-            <img id="activity_img" src="/src/assets/activity.png" alt="activity">
+            <img id="activity_img" src="src/assets/activity.png" alt="activity">
         </div>
         <br>
         <div class="cont">
@@ -91,9 +90,34 @@
             <label>πανινι</label><br>
             <input type="radio" id="q6r" name="food" value="mama">
             <label>mama souvlaki</label>
-            <img id="food_img" src="/src/assets/food.jpg" alt="food">
+            <img id="food_img" src="src/assets/food.jpg" alt="food">
         </div>
-
+        <br>
+        <div class="cont">
+            <h4 class="q7">Αγαπημένο νερό Κέρκυρας:<br></h4>
+            <input type="radio" id="q7r" name="water" value="Μιτσικελι">
+            <label>Μιτσικελι</label><br>
+            <input type="radio" id="q7r" name="water" value="Κωστηλατας">
+            <label>Κωστηλατας</label><br>
+            <input type="radio" id="q7r" name="water" value="table">
+            <label>table water (Lidl)</label><br>
+            <input type="radio" id="q7r" name="water" value="πινω">
+            <label>δεν πινω νερο</label>
+            <img id="water_img" src="src/assets/water.jpg" alt="water">
+        </div>
+        <br>
+        <div class="cont">
+            <h4 class="q8">Αγαπημένη κατάχρηση<br></h4>
+            <input type="radio" id="q8r" name="kataxrisi" value="αλκοολ">
+            <label>αλκοολ</label><br>
+            <input type="radio" id="q8r" name="kataxrisi" value="ψωμι">
+            <label>ψωμι</label><br>
+            <input type="radio" id="q8r" name="kataxrisi" value="χαρτονι">
+            <label>χαρτονι</label><br>
+            <input type="radio" id="q8r" name="kataxrisi" value="πατατακια">
+            <label>πατατακια</label>
+            <img id="kataxrisi_img" src="src/assets/kataxrisi.png" alt="kataxrisi">
+        </div>
     </div>
     <div id="buttoncont">
         <button id="btn1" type="button" onclick="btn_1()">Ποιος ειμαι ?</button>
@@ -102,5 +126,6 @@
 </body>
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js">  </script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/0.10.0/lodash.min.js"></script>
 <script type="text/javascript" src="src/js/script.js"></script>
 </html>
